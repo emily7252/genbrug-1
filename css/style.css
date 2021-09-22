@@ -1,0 +1,130 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --creme: #dfd7b7;
+  --brown: #49433e;
+  /* fonte */
+  --font: 'Trebuchet MS', sans-serif;
+  /* brødtekst */
+  --displayH: 'Luckiest Guy', cursive;
+  /* overskrifter */
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--creme);
+  font-family: var(--font);
+  margin: 0;
+}
+
+/* Typografi */
+h1 {
+  text-align: center;
+  font-family: var(--displayH);
+}
+
+/* header */
+header {
+  display: flex;
+  background-color: var(--creme);
+  justify: center;
+  height: 100px;
+}
+
+/* content */
+#content {
+  background-image: url('../images/baggrund.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  border-top: 100px solid transparent;
+}
+
+/*baggrund */
+#baggrund {
+  height: auto;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  */
+#left-content {
+  float: left;
+}
+
+#right-content {
+  float: right;
+  margin-right: 25px;
+}
+
+#left-content, #right-content {
+  margin-top: 75px;
+  font-size: 20px;
+}
+
+#midt {
+text-align: center;
+  }
+
+header {
+  list-style-type: none;
+  word-spacing: 220px;
+  text-align: center;
+  /*fjerner bullets ved lister*/
+}
+
+#venstre, #hoejre {
+  background-color: #;
+}
+
+li {
+  display: inline;
+}
+
+#midt {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  background-color: var(--creme);
+  height: 200px;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-between;
+  }
+
+  .kvinde {
+    text-align: center;
+    }
+
+
+/* Layout: Flexbox */
